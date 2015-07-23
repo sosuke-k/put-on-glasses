@@ -1,0 +1,8 @@
+{
+  "name": "putonglasses",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "~2.3.4"
+  }
+}
