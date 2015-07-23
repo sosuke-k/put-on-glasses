@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.2",
+  "version": "0.0.12",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -8,6 +8,9 @@
     "128": "images/icon-128.png"
   },
   "default_locale": "en",
+  "permissions": [
+    "tabs"
+  ],
   "background": {
     "scripts": [
       "scripts/chromereload.js",
@@ -29,8 +32,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "http://appear.in/*",
+        "https://appear.in/*"
       ],
       "js": [
         "scripts/contentscript.js"
